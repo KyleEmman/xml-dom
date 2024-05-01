@@ -1,0 +1,71 @@
+title {
+	color:gold;
+    font-size:40px;
+    font-weight:bolder;
+    text-align:center;
+}
+
+scamTypes {
+    text-align:center;
+}
+
+scamType {
+	width:50%;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+* {	
+	font-size:20px;
+    display:block;
+    margin:0 auto;
+}
+
+name {
+	color:white;
+	text-align:center;
+	font-style:italic;
+}
+
+scamType:nth-child(odd) {
+	border-width:5px;
+	border:solid;
+	border-radius:30px;
+	border-color:lightblue;
+    background-color:royalblue;
+}
+
+scamType:nth-child(even) {
+	border-width:5px;
+	border:solid;
+	border-radius:30px;
+	border-color:royalblue;
+    background-color:lightblue;
+}
+
+name::before {
+	content:"Name: ";
+}
+
+description::before {
+	content:"Description: ";
+}
+
+information::before {
+	content:"Information: ";
+}
+
+commontargets::before {
+	content:"Common Targets: ";
+}
+
+consequences::before {
+	content:"Consequences: ";
+}
+
+prevention::before {
+	content:"Prevention: ";
+}
+
