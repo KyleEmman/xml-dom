@@ -31,7 +31,13 @@
         <label for="createInformation">Information:</label>
         <input type="text" id="createInformation" name="createInformation" required>
         <label for="createCommonTargets">Common Targets:</label>
-        <input type="text" id="createCommonTargets" name="createCommonTargets" required>
+        <select name="createCommonTargets" id="createCommonTargets">
+            <option value="value1" selected>value1</option>
+            <option value="value2">value2</option>
+            <option value="value3">value3</option>
+            <option value="value4">value4</option>
+        </select>
+        <!-- <input type="text" id="createCommonTargets" name="createCommonTargets" required> -->
         <label for="createConsequences">Consequences:</label>
         <input type="text" id="createConsequences" name="createConsequences" required>
         <label for="createPrevention">Prevention:</label>

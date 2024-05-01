@@ -42,6 +42,15 @@
                         detailsDivs += `Old Picture: <div><img src='data:image;base64,${scamDetails[detail]}' height='50' width='50'></div>`
                         return
                     }
+					if (detail === 'commontargets') {
+						detailsDivs += `New ${detail}: 
+						<select value='${scamDetails[detail]}' name='edit${capitalizeFirstLetter(detail)}'>
+							<option>value1</option>
+							<option>value2</option>
+							<option>value3</option>
+							<option>value4</option>
+						</select> <br/>`
+					}
                     detailsDivs += `New ${detail}: <input type='text' value='${scamDetails[detail]}' name='edit${capitalizeFirstLetter(detail)}'/> <br/>`
                 })
                 console.log(detailsDivs)
